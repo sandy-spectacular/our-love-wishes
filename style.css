@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: radial-gradient(circle at bottom, #0b1d3a, #020824);
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#sky {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.star {
+  width: 12px;
+  height: 12px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.gold {
+  background: gold;
+  box-shadow: 0 0 12px gold;
+}
